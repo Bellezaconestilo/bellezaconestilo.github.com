@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0.5em 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    section {
+        max-width: 45%;
+        padding: 1em;
+        margin: 1em;
+        background: #f4f4f4;
+        border-radius: 5px;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    header {
+        text-align: left;
+        padding: 2em;
+    }
+
+    main {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 2em;
+    }
+}
